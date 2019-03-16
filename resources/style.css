@@ -1,3 +1,4 @@
+/*Universal styles*/
 html{
     background-color: white;
     font-family: "Helvetica";
@@ -12,15 +13,6 @@ div{
     display: block;
 }
 
-header{
-    background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png) no-repeat center center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 1rem;
-    height: 30rem;
-}
-
 .container{
     max-width: 960px;
     margin: auto;
@@ -30,8 +22,20 @@ header{
     display:flex;
 }
 
-header .flex{
-    justify-content: flex-end;
+/*Header*/
+header{
+    background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png) no-repeat center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1rem;
+    height: 30rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 nav{
@@ -40,6 +44,12 @@ nav{
     background-color: cadetblue;
     color: white;
     justify-content: space-between;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
 }
 
 nav img{
@@ -48,31 +58,88 @@ nav img{
     margin-right: 1rem;
 }
 
-nav div{
-    display: flex;
-    align-items: center;
+ul{
+    margin-right: 1rem;
 }
 
 ul li{
     display: inline;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+}
+
+header .flex{
+    justify-content: flex-end;
 }
 
 .main-banner{
     display: inline-block;
     background-color: white;
-    padding: 0.75rem 5rem;
+    padding: 1.5rem 5rem;
     margin-top: 10rem;
-    margin-right: 2rem;
-    line-height: 1.2;
+    margin-right: -2rem;
+    line-height: 1.2rem;
 }
 
-h1{
-    display: block;
-    font-size: 2rem;
+/*Supporting*/
+
+.supporting{
+    display: flex;
+    justify-content: center;
+}
+
+/*Service*/
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    width: 5rem;
+    height: 8rem;
+}
+
+.service img{
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.service img.paper-icon{
+    width: 3.5rem;
+}
+
+/*Info*/
+
+.info{
+    width: 35%;
+    margin-right: 5%;
+    margin-bottom: 5rem;
+}
+
+.info p{
+    padding: 1rem 0;
+}
+
+.title{
+    background-color: cadetblue;
+    padding: 0.5rem 1.25rem;
     font-weight: bold;
-    margin-block-start: 1.5rem;
-    margin-block-end: 1.5rem;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    color: white;
+    max-width: 10rem;
+}
+
+/*Footer*/
+
+footer{
+    background-color: azure;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+footer img{
+    height: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
 }
